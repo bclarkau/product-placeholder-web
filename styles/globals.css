@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
+	@apply scroll-smooth;
+}
+
+dl {
+	@apply inline-grid gap-2;
+	grid-template-columns: min-content minmax(0, 1fr);
+}
+
+dl dt {
+	@apply font-bold;
 }

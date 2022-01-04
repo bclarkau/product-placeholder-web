@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import { Footer } from "../components/footer"
 import { Product } from "../components/product"
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     <header className="flex justify-between mb-20">
 
       <div className="pt-40 lg:pt-60">
-        <h1 className="text-orange-500 text-7xl font-bold mb-5 md:text-5xl">Product<br />Placeholders</h1>
+        <h1 className="text-orange-500 font-bold mb-5 text-5xl lg:text-7xl">Product<br />Placeholders</h1>
         <p className="mb-10 lg:mb-16 lg:text-lg pr-10">Transparent product-ish PNGs for quick e-commerce mockups</p>
         <nav className="flex gap-3">
           <a href="#howto" className="inline-block px-6 lg:px-10 py-3 lg:py-5 text-white bg-orange-500 rounded">How to use</a>
@@ -47,34 +48,30 @@ const Home = () => {
 
         <p className="mb-2">Replace the <span className="text-sky-600">width</span> value to create a square image</p>
         <div className="font-mono bg-stone-100 p-4 mb-10">
-          <a href="https://www.prd.place/400" target="_blank">https://www.prd.place/<span className="text-sky-600">400</span></a>
+          <a href="https://prd.place/400" target="_blank">https://prd.place/<span className="text-sky-600">400</span></a>
         </div>
 
         <p className="mb-2">...or add both <span className="text-sky-600">width</span> and <span className="text-green-600">height</span> to get a custom size</p>
         <div className="font-mono bg-stone-100 p-4 mb-20">
-          <a href="https://www.prd.place/400/600" target="_blank">https://www.prd.place/<span className="text-sky-600">400</span>/<span className="text-green-600">600</span></a>
+          <a href="https://prd.place/400/600" target="_blank">https://prd.place/<span className="text-sky-600">400</span>/<span className="text-green-600">600</span></a>
         </div>
 
         <h2 className="text-3xl font-bold mb-10">Options</h2>
 
         <p className="mb-2">Add blank space around the product with <span className="text-sky-600">padding</span> (or just <span className="text-sky-600">p</span>!)</p>
         <div className="font-mono bg-stone-100 p-4 mb-10">
-          <a href="https://www.prd.place/400?p=80" target="_blank">https://www.prd.place/400<span className="text-sky-600">?padding=80</span></a>
+          <a href="https://prd.place/400?p=80" target="_blank">https://prd.place/400<span className="text-sky-600">?padding=80</span></a>
         </div>
 
         <p className="mb-2">Get a <Link href="images"><a className="underline">specific image</a></Link> by passing the <span className="text-sky-600">id</span></p>
         <div className="font-mono bg-stone-100 p-4 mb-10">
-          <a href="https://www.prd.place/400?id=37" target="_blank">https://www.prd.place/400<span className="text-sky-600">?id=37</span></a>
+          <a href="https://prd.place/400?id=37" target="_blank">https://prd.place/400<span className="text-sky-600">?id=37</span></a>
         </div>
 
       </div>
     </main>
 
-    <footer className="text-center p-20">
-      <p>Free to use for temporary, non-production use only.</p>
-      <p>Images belong to their respective creators, see <Link href="images"><a className="underline">credits</a></Link>.</p>
-      <a className="inline-block mt-10 underline" href="https://github.com/bclarkau/product-placeholder" target="_blank">Github</a>
-    </footer>
+    <Footer />
   </div>
 }
 
