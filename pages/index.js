@@ -4,30 +4,30 @@ import { Footer } from "../components/footer"
 import { Product } from "../components/product"
 
 const Home = () => {
-  return <div className="container mx-auto text-stone-700">
+  return <div className="container mx-auto px-10 text-stone-700">
     <Head>
       <title>Product image placeholders for e-commerce mockups</title>
     </Head>
 
-    <header className="flex justify-between mb-20">
+    <header className="md:flex justify-between mb-20">
 
-      <div className="pt-40 lg:pt-60">
-        <h1 className="text-orange-500 font-bold mb-5 text-5xl lg:text-7xl">Product<br />Placeholders</h1>
+      <div className="pt-20 md:pt-40 lg:pt-48 xl:pt-60">
+        <h1 className="text-orange-500 font-bold mb-5 text-5xl xl:text-7xl">Product<br />Placeholders</h1>
         <p className="mb-10 lg:mb-16 lg:text-lg pr-10">Transparent product-ish PNGs for quick e-commerce mockups</p>
         <nav className="flex gap-3">
-          <a href="#howto" className="inline-block px-6 lg:px-10 py-3 lg:py-5 text-white bg-orange-500 rounded">How to use</a>
+          <a href="#howto" className="inline-block px-6 lg:px-10 py-3 lg:py-5 text-white bg-orange-500 rounded hover:bg-orange-600 transition-colors">How to use</a>
           <Link href="images">
-            <a className="inline-block px-6 lg:px-10 py-3 lg:py-5 bg-orange-100 rounded">View images</a>
+            <a className="inline-block px-6 lg:px-10 py-3 lg:py-5 bg-orange-100 rounded hover:bg-orange-200 transition-colors">View images</a>
           </Link>
         </nav>
       </div>
 
       <div className="pt-20 md:pl-20">
-        <div className="inline-grid grid-cols-2 gap-5">
+        <div className="inline-grid sm:grid-cols-4 md:grid-cols-2 gap-5">
           <div>
             <Product id={35} />
           </div>
-          <div>
+          <div className="">
             <Product id={2} />
           </div>
           <div>
@@ -41,7 +41,7 @@ const Home = () => {
 
     </header>
 
-    <main className="border-4 border-orange-200 rounded-lg p-10 text-center mb-20">
+    <main className="border-4 border-orange-200 rounded-lg px-5 py-10 sm:p-10 text-center mb-20">
       <div id="howto" className="scroll-mt-16">
 
         <h2 className="text-3xl font-bold mb-10">Basic usage</h2>
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
 
         <p className="mb-2">Get a <Link href="images"><a className="underline">specific image</a></Link> by passing the <span className="text-sky-600">id</span></p>
-        <div className="font-mono bg-stone-100 p-4 mb-10">
+        <div className="font-mono bg-stone-100 p-4">
           <a href="https://prd.place/400?id=37" target="_blank">https://prd.place/400<span className="text-sky-600">?id=37</span></a>
         </div>
 
