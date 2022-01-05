@@ -5,10 +5,6 @@ import { Product } from "../components/product"
 
 const Home = () => {
   return <div className="container mx-auto px-10 text-stone-700">
-    <Head>
-      <title>Product image placeholders for e-commerce mockups</title>
-    </Head>
-
     <header className="md:flex justify-between mb-20">
 
       <div className="pt-20 md:pt-40 lg:pt-48 xl:pt-60">

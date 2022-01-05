@@ -7,7 +7,7 @@ import { ProductImage } from "../components/image"
 const Images = ({ images, error }) => {
   return <div className="container mx-auto px-10 text-stone-700">
     <Head>
-      <title>Product Placeholder - Image list and credits</title>
+      <title>Product Placeholders - Image list and credits</title>
     </Head>
 
     <header className="sm:flex justify-between items-center py-10">
