@@ -48,24 +48,24 @@ const Home = () => {
 
         <p className="mb-2">Replace the <span className="text-sky-600">width</span> value to create a square image</p>
         <div className="font-mono bg-stone-100 p-4 mb-10">
-          <a href="https://prd.place/400" target="_blank">https://prd.place/<span className="text-sky-600">400</span></a>
+          <a href="https://prd.place/400" target="_blank" rel="noreferrer">https://prd.place/<span className="text-sky-600">400</span></a>
         </div>
 
         <p className="mb-2">...or add both <span className="text-sky-600">width</span> and <span className="text-green-600">height</span> to get a custom size</p>
         <div className="font-mono bg-stone-100 p-4 mb-20">
-          <a href="https://prd.place/400/600" target="_blank">https://prd.place/<span className="text-sky-600">400</span>/<span className="text-green-600">600</span></a>
+          <a href="https://prd.place/400/600" target="_blank" rel="noreferrer">https://prd.place/<span className="text-sky-600">400</span>/<span className="text-green-600">600</span></a>
         </div>
 
         <h2 className="text-3xl font-bold mb-10">Options</h2>
 
         <p className="mb-2">Add blank space around the product with <span className="text-sky-600">padding</span> (or just <span className="text-sky-600">p</span>!)</p>
         <div className="font-mono bg-stone-100 p-4 mb-10">
-          <a href="https://prd.place/400?p=80" target="_blank">https://prd.place/400<span className="text-sky-600">?padding=80</span></a>
+          <a href="https://prd.place/400?p=80" target="_blank" rel="noreferrer">https://prd.place/400<span className="text-sky-600">?padding=80</span></a>
         </div>
 
         <p className="mb-2">Get a <Link href="images"><a className="underline">specific image</a></Link> by passing the <span className="text-sky-600">id</span></p>
         <div className="font-mono bg-stone-100 p-4">
-          <a href="https://prd.place/400?id=37" target="_blank">https://prd.place/400<span className="text-sky-600">?id=37</span></a>
+          <a href="https://prd.place/400?id=37" target="_blank" rel="noreferrer">https://prd.place/400<span className="text-sky-600">?id=37</span></a>
         </div>
 
       </div>
