@@ -1,8 +1,11 @@
 import '../styles/globals.css'
 
 import Head from 'next/head'
+import { usePanelbear } from '@panelbear/panelbear-nextjs'
 
 const App = ({ Component, pageProps }) => {
+	usePanelbear('DaOAvmDeyxp')
+
 	return <>
 	    <Head>
 			<title>Product Placeholders</title>
@@ -23,12 +26,6 @@ const App = ({ Component, pageProps }) => {
 			<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8300" />
 			<meta name="msapplication-TileColor" content="#ff8300" />
 			<meta name="theme-color" content="#ff8300" />
-
-			<script async src="https://cdn.panelbear.com/analytics.js?site=DaOAvmDeyxp"></script>
-			<script>
-				window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-				panelbear('config', { site: 'DaOAvmDeyxp' });
-			</script>
 		</Head>
 		<Component {...pageProps} />
 	</>
